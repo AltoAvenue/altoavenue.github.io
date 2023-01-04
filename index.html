@@ -1,57 +1,61 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <title>Aperture Science Inc.</title>
   <style>
     body {
-      background-color: #17C0E9;
-      color: #595959;
-      font-family: Arial, sans-serif;
-      text-align: center;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
-    }
-    img {
-      width: 15%;
-    }
-    .box {
-      background-color: white;
-      border-radius: 20px;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-      margin: 20px;
-      padding: 20px;
-      text-align: left;
-    }
-    p {
-      font-size: 1.2em;
       margin: 0;
-    }
-    footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
       background-color: #17C0E9;
-      color: #595959;
-      font-size: 0.8em;
-      padding: 10px;
     }
-    a {
+
+    .box {
+      width: 800px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: sans-serif;
       color: #595959;
-      text-decoration: none;
-      border-bottom: 1px solid #595959;
+      margin: 30px 0;
+    }
+
+    img.logo {
+      max-width: 350px;
+      margin: 30px 0;
+    }
+
+    img.ashpd {
+      width: 120px;
+      margin: 30px 0;
+    }
+
+    .footer {
+      font-size: 12px;
+      margin: 10px 0;
+      color: #595959;
+      font-family: sans-serif;
+    }
+
+    .footer a {
+      color: #595959;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <img src="aperture_logo.svg" alt="Aperture Science logo">
+  <img class="logo" src="logo.png" alt="ASHPD logo">
   <div class="box">
-    <p>Welcome to Aperture Science Inc., the leading manufacturer of portal technology. Our revolutionary Aperture Science Handheld Portal Device allows users to travel instantly through space. We are constantly striving to push the limits of what is possible with portal technology and are excited to share our innovations with the world. Thank you for choosing Aperture Science.</p>
+    <p>The Aperture Science Handheld Portal Device, originally marketed in the 1950s as an Aperture Science Portable Quantum Tunneling Device, also commonly known as a Portal Gun or by its acronym, "ASHPD", is an experimental tool used to create two portals through which objects can pass. Used in the Enrichment Center's testing tracks, it is a Test Subject's primary tool to complete each test.</p>
+    <img class="ashpd" src="ashpd.png" alt="ASHPD">
   </div>
-  <footer>
-    This page was created with <a href="https://chat.openai.com">OpenAI's ChatGPT</a> | This website is not affiliated with Valve Corporation
-  </footer>
+  <div class="footer">
+    <p>This page was created with <a href="https://chat.openai.com">OpenAI's ChatGPT</a></p>
+    <p>Not affiliated with with Valve Corporation</p>
+  </div>
 </body>
 </html>
