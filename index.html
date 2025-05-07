@@ -1,18 +1,105 @@
-<html>
-  <style>
-    body {
-      text-align: center;
-      padding-top: 200px;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-    p.s {
-      font: bold italic 20px Trebuchet MS, Arial, san-serif;
-    }
-  </style>
-  <body>
-    <title>ASHPD.net</title>
-    <h1><img src="aperture.png" alt="Aperture logo"<br></h1>
-    <p class="s">"We do what we must because we can."</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperture Science</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the page */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* New Lighter Background Gradient */
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 50%, #d1d5db 100%); /* Tailwind grays: gray-100, gray-200, gray-300 */
+            color: #111827; /* Dark gray text (Tailwind gray-900) for contrast */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars from gradient */
+        }
+
+        .splash-container {
+            /* Centering content */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem; /* Padding for smaller screens */
+            max-width: 90%; /* Max width for content */
+        }
+
+        .logo-container {
+            /* Styling for the logo container */
+            width: 150px; /* Default logo size */
+            height: 150px;
+            border-radius: 50%; /* Makes the container circular */
+            overflow: hidden; /* Clips the image to the circle */
+            margin-bottom: 2rem; /* Space below the logo */
+            background-color: #ffffff; /* White background for the logo circle */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Softer shadow for light background */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+        }
+
+        .logo-container:hover {
+            transform: scale(1.05); /* Slightly enlarge logo on hover */
+        }
+
+        .logo-img {
+            /* Ensures the image covers the circular container */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .quote {
+            /* Styling for the quote */
+            font-size: 1.25rem; /* Default font size for the quote */
+            font-style: italic;
+            color: #374151; /* Darker gray for the quote (Tailwind gray-700) */
+            max-width: 600px; /* Max width for the quote to maintain readability */
+            line-height: 1.6;
+            text-shadow: none; /* Removed text shadow, not typically needed for dark text on light bg */
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 640px) { /* sm: breakpoint in Tailwind */
+            .logo-container {
+                width: 200px;
+                height: 200px;
+            }
+            .quote {
+                font-size: 1.5rem; /* Larger font size for tablets and desktops */
+            }
+        }
+
+        @media (min-width: 1024px) { /* lg: breakpoint in Tailwind */
+            .logo-container {
+                width: 250px;
+                height: 250px;
+            }
+            .quote {
+                font-size: 1.75rem; /* Even larger font size for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-container">
+        <div class="logo-container">
+            <img src="aperture.png" alt="Aperture Science Logo" class="logo-img" onerror="this.onerror=null; this.src='https://placehold.co/250x250/374151/f3f4f6?text=Logo+Not+Found&font=inter';">
+        </div>
+
+        <p class="quote">
+            "We do what we must because we can."
+        </p>
+    </div>
+</body>
 </html>
