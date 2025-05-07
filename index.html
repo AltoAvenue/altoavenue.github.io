@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aperture Science</title>
+    <title>ASHPD.net</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
         /* Custom styles for the page */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', sans-serif; /* Inter remains for general body text if any */
             /* New Lighter Background Gradient */
             background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 50%, #d1d5db 100%); /* Tailwind grays: gray-100, gray-200, gray-300 */
             color: #111827; /* Dark gray text (Tailwind gray-900) for contrast */
@@ -61,6 +61,8 @@
 
         .quote {
             /* Styling for the quote */
+            font-family: 'Montserrat', sans-serif; /* New sleeker font */
+            font-weight: 700; /* Bold font weight */
             font-size: 1.25rem; /* Default font size for the quote */
             font-style: italic;
             color: #374151; /* Darker gray for the quote (Tailwind gray-700) */
@@ -94,7 +96,7 @@
 <body>
     <div class="splash-container">
         <div class="logo-container">
-            <img src="aperture.png" alt="Aperture Science Logo" class="logo-img" onerror="this.onerror=null; this.src='https://placehold.co/250x250/374151/f3f4f6?text=Logo+Not+Found&font=inter';">
+            <img src="aperture.png" alt="Aperture Science Logo" class="logo-img" onerror="this.onerror=null; this.src='https://placehold.co/250x250/374151/f3f4f6?text=Logo+Not+Found&font=montserrat';">
         </div>
 
         <p class="quote">
