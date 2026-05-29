@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toontown — Cog Battle System</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="game">
+    <!-- ===================== BATTLE FIELD ===================== -->
+    <div id="battlefield">
+      <div id="phase-banner"><span id="phase-text">Toontown Cog Battle</span></div>
+
+      <div id="cog-row" class="combatant-row"></div>
+
+      <!-- the "battle circle" floor -->
+      <div id="battle-circle"></div>
+
+      <div id="toon-row" class="combatant-row"></div>
+
+      <!-- floating combat text gets appended here -->
+      <div id="fx-layer"></div>
+    </div>
+
+    <!-- ===================== BATTLE MENU ===================== -->
+    <div id="battle-menu">
+      <!-- selection status / timer -->
+      <div id="menu-header">
+        <span id="select-prompt">Choose your gags!</span>
+        <div id="timer-wrap"><div id="timer-bar"></div><span id="timer-label"></span></div>
+      </div>
+
+      <!-- track tabs (7 gag tracks) -->
+      <div id="track-tabs"></div>
+
+      <!-- gag inventory grid for the selected track -->
+      <div id="gag-grid"></div>
+
+      <!-- action buttons -->
+      <div id="menu-actions">
+        <button id="btn-back" class="ctl-btn">◀ Back</button>
+        <button id="btn-pass" class="ctl-btn">Pass</button>
+        <button id="btn-fight" class="ctl-btn primary" disabled>FIGHT! ▶</button>
+      </div>
+    </div>
+
+    <!-- ===================== OVERLAYS ===================== -->
+    <div id="overlay" class="hidden">
+      <div id="overlay-card">
+        <h1 id="overlay-title"></h1>
+        <p id="overlay-body"></p>
+        <button id="overlay-btn" class="ctl-btn primary">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts: data -> calculator -> state -> ui -> controller -->
+  <script src="js/data.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/gamestate.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
