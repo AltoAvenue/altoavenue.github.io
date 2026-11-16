@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sims 2 Randomizer</title>
+<link rel="icon" href="assets/ts2site/logo_puck_small.gif">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="page">
+
+    <div id="header">
+    <div id="puck"><img src="assets/ts2site/logo_puck_small.gif" alt="The Sims 2" width="149" height="149"></div>
+    <div id="nav-strip" aria-hidden="true">
+      <img src="assets/ts2site/side_left_2.jpg" alt="">
+      <img src="assets/ts2site/nav1.jpg" alt=""><img src="assets/ts2site/nav2.jpg" alt=""><img src="assets/ts2site/nav3.jpg" alt=""><img src="assets/ts2site/nav4.jpg" alt=""><img src="assets/ts2site/nav5.jpg" alt=""><img src="assets/ts2site/nav6.jpg" alt=""><img src="assets/ts2site/nav7.jpg" alt=""><img src="assets/ts2site/nav8.jpg" alt=""><img src="assets/ts2site/nav9.jpg" alt=""><img src="assets/ts2site/nav10.jpg" alt="">
+      <img src="assets/ts2site/side_right.jpg" alt="">
+    </div>
+  </div>
+
+  <div id="main">
+        <div id="toolbar">
+      <div class="tb-top"></div>
+      <div class="tb-body">
+        <div class="pod">
+          <h2>Randomize!</h2>
+          <label for="gender">Name gender</label>
+          <select id="gender">
+            <option value="random">Random</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <button class="btn big" data-action="all">Randomize All</button>
+          <button class="btn" data-action="name">Name</button>
+          <button class="btn" data-action="personality">Personality</button>
+          <button class="btn" data-action="chemistry">Turn-Ons &amp; Offs</button>
+        </div>
+      </div>
+      <div class="tb-bottom"></div>
+    </div>
+
+        <div id="content">
+      <img src="assets/ts2site/header_coolstuff.jpg" alt="Cool Stuff" width="748" height="102" class="banner">
+      <div id="crumbs">Home &gt; Cool Stuff &gt; <b>Sim Randomizer</b></div>
+      <div id="panel">
+        <div class="pod-top"></div>
+        <div class="pod-mid">
+          <h1>Meet Your New Sim</h1>
+          <p class="intro">Roll a brand-new Sim, or re-roll just the parts you don't like.</p>
+
+          <section>
+            <div class="sec-head"><h3>Name</h3><button class="btn small" data-action="name" aria-label="Randomize name">Randomize</button></div>
+            <div id="name-out" class="out" aria-live="polite"></div>
+          </section>
+          <div class="divider"></div>
+
+          <section>
+            <div class="sec-head"><h3>Personality &amp; Sign</h3><button class="btn small" data-action="personality" aria-label="Randomize personality">Randomize</button></div>
+            <div id="personality-out" class="out" aria-live="polite"></div>
+          </section>
+          <div class="divider"></div>
+
+          <section>
+            <div class="sec-head"><h3>Turn-Ons &amp; Offs</h3><button class="btn small" data-action="chemistry" aria-label="Randomize turn-ons and turn-offs">Randomize</button></div>
+            <div id="chemistry-out" class="out" aria-live="polite"></div>
+          </section>
+        </div>
+        <div class="pod-bottom"></div>
+      </div>
+      <div class="content-bottom"></div>
+    </div>
+  </div>
+
+  <div id="footer">
+    Fan project, not affiliated with EA or Maxis. Names, icons and data from the <a href="https://sims.fandom.com/">Sims Wiki</a> (CC BY-SA).
+  </div>
+</div>
+
+<script src="js/names.js"></script>
+<script src="js/data.js"></script>
+<script src="js/randomizer.js"></script>
+</body>
+</html>

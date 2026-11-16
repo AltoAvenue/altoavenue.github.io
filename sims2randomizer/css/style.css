@@ -1,0 +1,104 @@
+/* Style after the archived thesims2.ea.com (2009 inner-page layout).
+   Colours/fonts taken from its main.css: Verdana 12px, page #003062, text #000066, links #F0EC9F. */
+html { background: #003062; }
+body { margin: 0; background: #003062; color: #000066; font: 12px Verdana, Arial, Helvetica, sans-serif; }
+a { color: #F0EC9F; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { border: 0; }
+
+#page { width: 983px; margin: 0 auto; position: relative; }
+
+/* header */
+#header { position: relative; z-index: 2; height: 79px; }
+#puck { position: absolute; left: 0; top: 0; z-index: 3; }
+#nav-strip { position: absolute; left: 107px; top: 0; display: flex; height: 79px; }
+#nav-strip img { display: block; height: 79px; }
+
+/* two columns */
+#main { display: flex; align-items: flex-start; margin-top: 4px; }
+
+/* toolbar */
+#toolbar { width: 183px; flex: none; margin: -19px 0 0 24px; }
+.tb-top { height: 110px; background: url(../assets/ts2site/toolbar_top.gif) no-repeat top left; }
+.tb-body { background: url(../assets/ts2site/toolbar_bg.gif) repeat-y; }
+.tb-bottom { height: 97px; background: url(../assets/ts2site/toolbar_bottom.gif) no-repeat; }
+.pod { background: url(../assets/ts2site/toolbar_generic_pod_bg.gif) repeat-y; padding: 4px 18px 0; }
+.pod::after { content: ""; display: block; height: 6px; margin: 8px -18px 0; background: url(../assets/ts2site/toolbar_generic_pod_bottom.gif) no-repeat; }
+.pod h2 { margin: 0 0 8px; font: bold 14px Verdana, Arial, sans-serif; color: #021573; }
+.pod label { display: block; font-size: 11px; font-weight: bold; color: #021573; margin-bottom: 3px; }
+.pod select { width: 100%; margin-bottom: 10px; font: 12px Verdana, Arial, sans-serif; }
+
+/* buttons: lavender, bevelled, like the site's pods */
+.btn { display: block; width: 100%; margin: 0 0 6px; padding: 5px 6px; cursor: pointer;
+  font: bold 12px Verdana, Arial, sans-serif; color: #021573; text-align: center;
+  background: #B4BBFF; border: 2px solid #4052B5; border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #E6E8F5; }
+.btn:hover { background: #E6E8F5; }
+.btn:active { background: #8E97DC; }
+.btn.big { padding: 9px 6px; font-size: 13px; background: #F0EC9F; border-color: #8a8433; margin-bottom: 12px; }
+.btn.big:hover { background: #FFFEE8; }
+.btn.small { width: auto; margin: 0; padding: 3px 10px; font-size: 11px; }
+
+/* content column */
+#content { width: 748px; flex: none; margin-left: 12px; }
+.banner { display: block; }
+#crumbs { font-size: 10px; padding: 6px 0 6px 10px; background: url(../assets/ts2site/content_bg.gif) repeat-y; }
+#crumbs b { font-weight: bold; }
+#panel { background: url(../assets/ts2site/content_bg.gif) repeat-y; padding: 0 31px; }
+.pod-top { height: 6px; background: url(../assets/ts2site/pod_big_top.gif) no-repeat; }
+.pod-mid { background: url(../assets/ts2site/pod_bg_big.gif) repeat-y; padding: 6px 18px 4px; min-height: 200px; }
+.pod-bottom { height: 6px; background: url(../assets/ts2site/pod_big_bottom.gif) no-repeat; }
+.content-bottom { height: 21px; background: url(../assets/ts2site/content_bottom.jpg) no-repeat; }
+
+h1 { font: bold 16px Arial, Helvetica, sans-serif; color: #021573; margin: 6px 0 4px; }
+.intro { margin: 0 0 8px; }
+.sec-head { display: flex; align-items: center; justify-content: space-between; margin-top: 6px; }
+h3 { margin: 0; font: bold 14px Verdana, Arial, sans-serif; color: #021573; }
+.divider { height: 7px; background: url(../assets/ts2site/pod_big_divider.gif) no-repeat center; margin: 8px 0; }
+.out { padding: 8px 0 4px; }
+.sub { font-size: 10px; color: #333399; font-weight: bold; }
+.note { font-size: 10px; margin: 4px 0 6px; color: #021573; }
+
+/* name */
+.sim-name { font: bold 26px Arial, Helvetica, sans-serif; color: #021573; }
+
+/* personality */
+#personality-out { display: flex; gap: 24px; align-items: center; }
+.zodiac { text-align: center; width: 120px; flex: none; }
+.zodiac-icon { width: 64px; height: 64px; }
+.zodiac-name { font: bold 16px Arial, Helvetica, sans-serif; color: #021573; }
+table.personality { border-collapse: collapse; }
+table.personality td { padding: 3px 6px; vertical-align: middle; }
+table.personality .lo { text-align: right; font-weight: bold; width: 60px; }
+table.personality .hi { text-align: left; font-weight: bold; width: 70px; }
+table.personality .val { font-weight: bold; color: #021573; width: 20px; text-align: right; }
+table.personality .bar img { display: block; }
+
+/* chemistry */
+.chem-row { display: flex; gap: 14px; }
+.chem { flex: 1; text-align: center; padding: 8px 6px; background: #B4BBFF; border: 1px solid #000066; }
+.chem.off { background: #9999FF; }
+.chem .kind { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #021573; }
+.chem.off .kind { color: #660000; }
+.chem .icon { height: 72px; display: flex; align-items: center; justify-content: center; }
+.chem .icon img { max-width: 64px; max-height: 64px; }
+.chem .icon.skill img { width: 64px; height: 64px; }
+.chem .trait { font: bold 14px Verdana, Arial, sans-serif; color: #021573; }
+.chem .pack { font-size: 10px; color: #333399; }
+
+#footer { font-size: 10px; text-align: center; color: #A0D3E2; padding: 14px 0 30px; }
+
+@media (max-width: 1000px) {
+  #page { width: auto; }
+  #main { flex-direction: column; align-items: stretch; padding: 0 8px; }
+  #toolbar { width: 183px; margin: 8px auto; }
+  /* the frame art is 748px wide, so never let the column grow past it */
+  #content { width: auto; max-width: 748px; margin: 0 auto; }
+  .banner { width: 100%; height: auto; }
+  /* clip only the nav strip; the puck logo hangs below the header on purpose */
+  #nav-strip { right: 0; overflow: hidden; }
+  #nav-strip img { flex: none; }
+}
+@media (max-width: 640px) {
+  #personality-out, .chem-row { flex-direction: column; }
+}
